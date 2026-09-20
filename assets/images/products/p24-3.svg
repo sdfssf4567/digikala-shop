@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fc5c7d"/>
+      <stop offset="100%" stop-color="#6a82fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="295" cy="328" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="524" cy="169" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="191" cy="465" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="451" cy="326" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="98" cy="389" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="272" cy="527" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="220" cy="488" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="158" cy="331" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="425" cy="360" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="409" cy="357" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="362" cy="460" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="159" cy="327" r="5" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(1.12)">
+    <rect x="-100" y="-65" width="200" height="130" rx="14" fill="rgba(255,255,255,0.92)"/>
+    <circle cx="35" cy="0" r="42" fill="#31354c" opacity="0.18"/>
+    <circle cx="35" cy="0" r="10" fill="#31354c" opacity="0.4"/>
+    <rect x="-80" y="-45" width="60" height="10" rx="5" fill="#31354c" opacity="0.35"/>
+    <rect x="-80" y="-25" width="40" height="10" rx="5" fill="#31354c" opacity="0.35"/>
+  </g><text x="300.0" y="55" font-family="Vazirmatn, Tahoma, sans-serif" font-size="26" fill="rgba(255,255,255,0.85)" text-anchor="middle">تصویر 3</text>
+  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">هارد اکسترنال وسترن</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">دیجیتال ۱ ترابایت</text>
+</svg>

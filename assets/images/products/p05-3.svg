@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fa709a"/>
+      <stop offset="100%" stop-color="#fee140"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="480" cy="285" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="303" cy="553" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="264" cy="301" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="99" cy="312" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="298" cy="363" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="573" cy="102" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="174" cy="256" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="176" cy="239" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="444" cy="437" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="575" cy="497" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="83" cy="231" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="418" cy="40" r="7" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(1.12)">
+    <rect x="-52" y="-95" width="104" height="190" rx="18" fill="rgba(255,255,255,0.92)"/>
+    <rect x="-42" y="-80" width="84" height="160" rx="10" fill="#31354c"/>
+    <circle cx="0" cy="97" r="6" fill="#31354c"/>
+    <rect x="-16" y="-88" width="32" height="5" rx="2.5" fill="#31354c"/>
+  </g><text x="300.0" y="55" font-family="Vazirmatn, Tahoma, sans-serif" font-size="26" fill="rgba(255,255,255,0.85)" text-anchor="middle">تصویر 3</text>
+  <text x="300.0" y="540" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">گوشی موبایل نوکیا 105</text>
+</svg>

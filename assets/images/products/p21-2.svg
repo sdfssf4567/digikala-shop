@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#42275a"/>
+      <stop offset="100%" stop-color="#734b6d"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="243" cy="94" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="453" cy="372" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="574" cy="81" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="503" cy="52" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="438" cy="204" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="450" cy="403" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="479" cy="406" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="102" cy="572" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="376" cy="141" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="570" cy="422" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="150" cy="248" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="43" cy="325" r="6" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(0.85)">
+    <rect x="-85" y="-30" width="170" height="115" rx="20" fill="rgba(255,255,255,0.92)"/>
+    <rect x="-95" y="-38" width="190" height="16" rx="8" fill="rgba(255,255,255,0.85)"/>
+    <path d="M -95 -30 C -130 -30, -130 5, -95 5" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="10"/>
+    <path d="M 95 -30 C 130 -30, 130 5, 95 5" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="10"/>
+    <circle cx="0" cy="-52" r="10" fill="rgba(255,255,255,0.95)"/>
+  </g>  <text x="300.0" y="540" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">ست قابلمه تفال ۹ پارچه</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fc5c7d"/>
+      <stop offset="100%" stop-color="#6a82fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="450" fill="url(#bg)"/>
+<circle cx="549" cy="133" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="1082" cy="305" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="472" cy="248" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="821" cy="257" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="1044" cy="97" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="70" cy="267" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="625" cy="232" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="257" cy="393" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="733" cy="179" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="952" cy="421" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="1087" cy="267" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="995" cy="69" r="6" fill="rgba(255,255,255,0.10)"/>
+  <text x="600.0" y="189" font-family="Vazirmatn, Tahoma, sans-serif" font-size="64"
+        font-weight="800" fill="#ffffff" text-anchor="middle" direction="rtl">خانه هوشمند</text>
+  <text x="600.0" y="261" font-family="Vazirmatn, Tahoma, sans-serif" font-size="32"
+        fill="rgba(255,255,255,0.92)" text-anchor="middle" direction="rtl">کالاهای برقی و آشپزخانه</text>
+  <rect x="520.0" y="315" width="160" height="46" rx="23" fill="rgba(255,255,255,0.95)"/>
+  <text x="600.0" y="346" font-family="Vazirmatn, Tahoma, sans-serif" font-size="22"
+        font-weight="700" fill="#fc5c7d" text-anchor="middle" direction="rtl">همین حالا بخر</text>
+</svg>

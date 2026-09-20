@@ -1,0 +1,179 @@
+/* ===============================================
+ * استایل پنل مدیریت
+ * =============================================== */
+
+:root {
+    --adm-red: #ef4056;
+    --adm-dark: #23254e;
+    --adm-bg: #f2f3f7;
+    --adm-border: #e4e6ef;
+}
+
+body.admin-body {
+    background: var(--adm-bg);
+    font-size: 14px;
+    color: var(--adm-dark);
+}
+
+/* ---------- نوار بالای پنل ---------- */
+.admin-topbar {
+    background: var(--adm-dark);
+    height: 58px;
+    position: sticky;
+    top: 0;
+    z-index: 1040;
+}
+
+/* ---------- منوی کنار ---------- */
+.admin-sidebar {
+    background: #fff;
+    border-left: 1px solid var(--adm-border);
+    min-height: calc(100vh - 58px);
+    position: sticky;
+    top: 58px;
+    align-self: flex-start;
+    height: calc(100vh - 58px);
+    overflow-y: auto;
+    width: 100%;
+}
+.admin-menu li { margin-bottom: 4px; }
+.admin-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 14px;
+    border-radius: 10px;
+    color: var(--adm-dark);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .15s;
+}
+.admin-menu a:hover { background: #f7f7f9; }
+.admin-menu a.active {
+    background: var(--adm-red);
+    color: #fff;
+}
+.admin-menu a .badge { margin-right: auto; }
+
+/* ---------- کارت‌های محتوا ---------- */
+.admin-card {
+    background: #fff;
+    border: 1px solid var(--adm-border);
+    border-radius: 14px;
+}
+
+/* ---------- کارت آماری داشبورد ---------- */
+.stat-card {
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+.stat-value { font-weight: 800; font-size: 1.05rem; }
+.stat-label { font-size: .78rem; color: #6c7080; margin-top: 2px; }
+
+/* ---------- جداول ---------- */
+.table th { font-weight: 700; }
+.admin-product-thumb {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: #fafafa;
+    border: 1px solid var(--adm-border);
+}
+
+/* ---------- فرم محصول ---------- */
+.admin-image-box {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    border: 1px solid var(--adm-border);
+    border-radius: 10px;
+    overflow: visible;
+}
+.admin-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #fafafa;
+    border-radius: 10px;
+}
+.admin-image-delete {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+}
+
+/* ---------- فیلترهای ناوبار ---------- */
+.admin-filter-pills .nav-link {
+    color: var(--adm-dark);
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 6px 18px;
+}
+.admin-filter-pills .nav-link.active { background: var(--adm-red); }
+
+/* ردیف‌های سفارش اخیر داشبورد */
+.latest-order-row:hover { background: #fafafa; }
+
+/* ---------- ریسپانسیو پنل ---------- */
+@media (max-width: 991px) {
+    .admin-sidebar {
+        position: fixed;
+        right: -260px;
+        top: 58px;
+        width: 250px;
+        z-index: 1035;
+        transition: right .25s ease;
+        height: calc(100vh - 58px);
+    }
+    .admin-sidebar.open { right: 0; box-shadow: -8px 0 24px rgba(0,0,0,.1); }
+}
+
+/* کلاس کمکی اعداد چپ‌به‌راست */
+.ltr-input { direction: ltr; text-align: left; }
+.ltr-input-inline { direction: ltr; unicode-bidi: embed; display: inline-block; }
+
+.btn-primary {
+    --bs-btn-bg: var(--adm-red);
+    --bs-btn-border-color: var(--adm-red);
+    --bs-btn-hover-bg: #d63a4d;
+    --bs-btn-hover-border-color: #d63a4d;
+}
+.btn-outline-primary {
+    --bs-btn-color: var(--adm-red);
+    --bs-btn-border-color: var(--adm-red);
+    --bs-btn-hover-bg: var(--adm-red);
+    --bs-btn-hover-border-color: var(--adm-red);
+}
+
+.discount-badge {
+    background: var(--adm-red) !important;
+    color: #fff;
+    border-radius: 20px;
+    font-size: .7rem;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #94969f;
+    font-size: .8rem;
+}

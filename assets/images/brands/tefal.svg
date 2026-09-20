@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80">
+  <rect width="200" height="80" rx="14" fill="#ffffff" stroke="#c8102e" stroke-width="2"/>
+  <circle cx="36" cy="40" r="12" fill="#c8102e"/>
+  <text x="112" y="48" font-family="Vazirmatn, Tahoma, sans-serif" font-size="22"
+        font-weight="700" fill="#c8102e" text-anchor="middle" direction="rtl">تفال</text>
+</svg>

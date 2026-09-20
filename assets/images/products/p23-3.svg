@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b09b"/>
+      <stop offset="100%" stop-color="#96c93d"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="507" cy="77" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="195" cy="104" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="464" cy="359" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="117" cy="560" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="255" cy="236" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="506" cy="297" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="96" cy="307" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="53" cy="203" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="36" cy="232" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="167" cy="427" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="326" cy="186" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="266" cy="418" r="7" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(1.12)">
+    <rect x="-75" y="-95" width="150" height="190" rx="30" fill="rgba(255,255,255,0.92)"/>
+    <circle cx="0" cy="-25" r="42" fill="#31354c"/>
+    <circle cx="0" cy="-25" r="18" fill="rgba(255,255,255,0.6)"/>
+    <rect x="-45" y="45" width="90" height="12" rx="6" fill="#31354c" opacity="0.5"/>
+  </g><text x="300.0" y="55" font-family="Vazirmatn, Tahoma, sans-serif" font-size="26" fill="rgba(255,255,255,0.85)" text-anchor="middle">تصویر 3</text>
+  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">اسپیکر بلوتوثی</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">جی‌بی‌ال Go 4</text>
+</svg>

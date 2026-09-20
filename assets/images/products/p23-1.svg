@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b09b"/>
+      <stop offset="100%" stop-color="#96c93d"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="365" cy="283" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="522" cy="491" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="380" cy="193" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="579" cy="520" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="575" cy="80" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="54" cy="96" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="26" cy="442" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="256" cy="89" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="29" cy="243" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="486" cy="402" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="514" cy="519" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="26" cy="564" r="7" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,265) scale(1.0)">
+    <rect x="-75" y="-95" width="150" height="190" rx="30" fill="rgba(255,255,255,0.92)"/>
+    <circle cx="0" cy="-25" r="42" fill="#31354c"/>
+    <circle cx="0" cy="-25" r="18" fill="rgba(255,255,255,0.6)"/>
+    <rect x="-45" y="45" width="90" height="12" rx="6" fill="#31354c" opacity="0.5"/>
+  </g>  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">اسپیکر بلوتوثی</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">جی‌بی‌ال Go 4</text>
+</svg>

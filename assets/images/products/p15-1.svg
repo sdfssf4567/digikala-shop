@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5576c"/>
+      <stop offset="100%" stop-color="#f093fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="259" cy="566" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="336" cy="500" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="396" cy="471" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="308" cy="411" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="560" cy="448" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="224" cy="161" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="73" cy="512" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="125" cy="548" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="311" cy="105" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="299" cy="480" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="170" cy="467" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="247" cy="481" r="5" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,265) scale(1.0)">
+    <path d="M -110 -60 C -60 -120, -30 60, 0 0 C 30 -60, 60 120, 110 -20"
+          fill="none" stroke="rgba(255,255,255,0.95)" stroke-width="16" stroke-linecap="round"/>
+    <rect x="-122" y="-76" width="34" height="24" rx="6" fill="#fff"/>
+    <rect x="96" y="-36" width="34" height="24" rx="6" fill="#fff"/>
+  </g>  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">کابل شارژ تایپ سی انکر</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">۱ متری</text>
+</svg>

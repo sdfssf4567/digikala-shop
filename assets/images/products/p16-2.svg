@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f5efb"/>
+      <stop offset="100%" stop-color="#fc466b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="215" cy="312" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="68" cy="359" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="147" cy="396" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="429" cy="470" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="367" cy="211" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="529" cy="396" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="293" cy="104" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="100" cy="460" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="204" cy="578" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="348" cy="125" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="355" cy="322" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="476" cy="456" r="4" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(0.85)">
+    <rect x="-46" y="-90" width="92" height="150" rx="14" fill="rgba(255,255,255,0.35)"/>
+    <rect x="-60" y="60" width="120" height="20" rx="10" fill="rgba(255,255,255,0.95)"/>
+    <rect x="-30" y="-14" width="60" height="14" rx="7" fill="rgba(255,255,255,0.95)"/>
+    <circle cx="0" cy="-70" r="10" fill="rgba(255,255,255,0.95)"/>
+  </g>  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">پایه نگهدارنده گوشی</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">رومیزی</text>
+</svg>

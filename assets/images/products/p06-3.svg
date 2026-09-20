@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#30cfd0"/>
+      <stop offset="100%" stop-color="#330867"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="130" cy="46" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="404" cy="426" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="97" cy="268" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="328" cy="143" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="62" cy="375" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="458" cy="399" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="538" cy="369" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="450" cy="521" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="463" cy="390" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="176" cy="465" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="554" cy="296" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="571" cy="515" r="6" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(1.12)">
+    <rect x="-80" y="-105" width="160" height="210" rx="16" fill="rgba(255,255,255,0.92)"/>
+    <rect x="-66" y="-88" width="132" height="176" rx="8" fill="#31354c"/>
+    <circle cx="0" cy="102" r="5" fill="#31354c"/>
+  </g><text x="300.0" y="55" font-family="Vazirmatn, Tahoma, sans-serif" font-size="26" fill="rgba(255,255,255,0.85)" text-anchor="middle">تصویر 3</text>
+  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">تبلت سامسونگ Galaxy</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">Tab S9</text>
+</svg>

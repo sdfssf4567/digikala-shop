@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fc5c7d"/>
+      <stop offset="100%" stop-color="#6a82fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="344" cy="389" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="113" cy="25" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="475" cy="388" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="124" cy="155" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="211" cy="461" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="544" cy="437" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="46" cy="111" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="115" cy="352" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="32" cy="318" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="417" cy="106" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="268" cy="553" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="409" cy="193" r="4" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(0.85)">
+    <rect x="-100" y="-65" width="200" height="130" rx="14" fill="rgba(255,255,255,0.92)"/>
+    <circle cx="35" cy="0" r="42" fill="#31354c" opacity="0.18"/>
+    <circle cx="35" cy="0" r="10" fill="#31354c" opacity="0.4"/>
+    <rect x="-80" y="-45" width="60" height="10" rx="5" fill="#31354c" opacity="0.35"/>
+    <rect x="-80" y="-25" width="40" height="10" rx="5" fill="#31354c" opacity="0.35"/>
+  </g>  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">هارد اکسترنال وسترن</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">دیجیتال ۱ ترابایت</text>
+</svg>

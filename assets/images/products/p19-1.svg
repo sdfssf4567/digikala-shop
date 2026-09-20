@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2193b0"/>
+      <stop offset="100%" stop-color="#6dd5ed"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="172" cy="547" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="355" cy="346" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="422" cy="326" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="364" cy="539" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="565" cy="521" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="326" cy="506" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="397" cy="359" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="446" cy="335" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="505" cy="291" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="253" cy="72" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="511" cy="194" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="409" cy="171" r="4" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,265) scale(1.0)">
+    <path d="M -60 -40 L 60 -40 L 48 85 Q 46 95 34 95 L -34 95 Q -46 95 -48 85 Z" fill="rgba(255,255,255,0.92)"/>
+    <path d="M -60 -40 L 60 -40 L 55 -18 L -55 -18 Z" fill="#31354c" opacity="0.3"/>
+    <rect x="-38" y="-62" width="76" height="18" rx="9" fill="rgba(255,255,255,0.85)"/>
+    <path d="M 60 -20 C 95 -25, 100 5, 72 15" fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M -55 5 C -95 0, -100 45, -68 52" fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="12" stroke-linecap="round"/>
+  </g>  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">کتری برقی فیلیپس ۱.۷</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">لیتر</text>
+</svg>

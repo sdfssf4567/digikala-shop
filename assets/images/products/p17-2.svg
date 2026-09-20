@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="100%" stop-color="#38ef7d"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="144" cy="225" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="262" cy="525" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="389" cy="397" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="152" cy="108" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="336" cy="427" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="558" cy="440" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="95" cy="148" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="95" cy="480" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="549" cy="372" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="206" cy="152" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="534" cy="76" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="550" cy="176" r="5" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(0.85)">
+    <path d="M -115 40 C -115 10, -95 0, -70 -5 C -30 -14, -10 -55, 25 -55 C 60 -55, 90 -30, 105 -5 C 115 12, 118 40, 110 48 L -100 48 C -110 48, -115 46, -115 40 Z"
+          fill="rgba(255,255,255,0.92)"/>
+    <path d="M -100 48 L 110 48 L 110 30 L -100 30 Z" fill="#31354c" opacity="0.35"/>
+    <path d="M -60 5 C -30 -10, 0 -35, 30 -38" fill="none" stroke="#31354c" stroke-width="5" opacity="0.4"/>
+  </g>  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">کفش ورزشی مردانه نایک</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">Air Max</text>
+</svg>

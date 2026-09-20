@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5576c"/>
+      <stop offset="100%" stop-color="#f093fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="144" cy="68" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="449" cy="488" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="133" cy="531" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="568" cy="36" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="267" cy="167" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="459" cy="21" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="381" cy="266" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="446" cy="211" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="556" cy="389" r="3" fill="rgba(255,255,255,0.10)"/>
+<circle cx="558" cy="577" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="539" cy="40" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="501" cy="64" r="6" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,280) scale(1.12)">
+    <path d="M -110 -60 C -60 -120, -30 60, 0 0 C 30 -60, 60 120, 110 -20"
+          fill="none" stroke="rgba(255,255,255,0.95)" stroke-width="16" stroke-linecap="round"/>
+    <rect x="-122" y="-76" width="34" height="24" rx="6" fill="#fff"/>
+    <rect x="96" y="-36" width="34" height="24" rx="6" fill="#fff"/>
+  </g><text x="300.0" y="55" font-family="Vazirmatn, Tahoma, sans-serif" font-size="26" fill="rgba(255,255,255,0.85)" text-anchor="middle">تصویر 3</text>
+  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">کابل شارژ تایپ سی انکر</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">۱ متری</text>
+</svg>

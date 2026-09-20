@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#feada6"/>
+      <stop offset="100%" stop-color="#f5efef"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="298" cy="473" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="517" cy="472" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="299" cy="240" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="136" cy="373" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="133" cy="310" r="7" fill="rgba(255,255,255,0.10)"/>
+<circle cx="518" cy="559" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="66" cy="245" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="76" cy="27" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="328" cy="236" r="4" fill="rgba(255,255,255,0.10)"/>
+<circle cx="281" cy="316" r="5" fill="rgba(255,255,255,0.10)"/>
+<circle cx="142" cy="27" r="6" fill="rgba(255,255,255,0.10)"/>
+<circle cx="460" cy="199" r="4" fill="rgba(255,255,255,0.10)"/>
+<g transform="translate(300.0,265) scale(1.0)">
+    <ellipse cx="0" cy="0" rx="62" ry="92" fill="rgba(255,255,255,0.92)"/>
+    <path d="M 0 -92 L 0 -12" stroke="#c9ccd8" stroke-width="4"/>
+    <rect x="-10" y="-60" width="20" height="34" rx="10" fill="#4ade80"/>
+  </g>  <text x="300.0" y="522" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">ماوس گیمینگ لاجیتک</text>
+  <text x="300.0" y="560" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30"
+        font-weight="700" fill="#ffffff" text-anchor="middle" direction="rtl"
+        stroke="rgba(0,0,0,0.25)" stroke-width="0.6">G102</text>
+</svg>
