@@ -56,16 +56,16 @@ if (empty($images)) {
         <div class="col-md-4">
             <h4 class="product-page-title"><?= e($product['title']) ?></h4>
 
-            <div class="d-flex align-items-center gap-3 mt-2 small">
+            <div class="d-flex align-items-center flex-wrap gap-2 mt-3 small">
                 <!-- امتیاز کاربران -->
-                <span class="text-warning">
+                <span class="rating-pill">
                     <?php for ($i = 1; $i <= 5; $i++): ?>
                         <i class="bi <?= $i <= round($rating['average']) ? 'bi-star-fill' : 'bi-star' ?>"></i>
                     <?php endfor; ?>
-                    <span class="text-dark ms-1"><?= fa_num($rating['average']) ?></span>
+                    <?= fa_num($rating['average']) ?>
                 </span>
-                <span class="text-muted">(<?= fa_num($rating['total']) ?> امتیاز)</span>
-                <span class="text-muted"><i class="bi bi-eye ms-1"></i><?= fa_num($product['views']) ?> بازدید</span>
+                <span class="text-muted-2">(<?= fa_num($rating['total']) ?> امتیاز)</span>
+                <span class="text-muted-2"><i class="bi bi-eye ms-1"></i><?= fa_num($product['views']) ?> بازدید</span>
             </div>
 
             <ul class="list-unstyled product-quick-info mt-3 small">
@@ -79,13 +79,22 @@ if (empty($images)) {
 
         <!-- ================= باکس خرید ================= -->
         <div class="col-md-3">
-            <div class="buy-box rounded-3 p-3">
+            <div class="buy-box p-3">
+                <!-- فروشنده -->
+                <div class="seller-row">
+                    <i class="bi bi-shop"></i>
+                    فروشنده: <strong class="text-dark"><?= e(SITE_NAME) ?></strong>
+                </div>
+
                 <!-- قیمت -->
                 <div class="buy-box-price">
                     <?php if ($hasDiscount): ?>
-                        <div class="old-price mb-1"><?= fa_price($product['price']) ?></div>
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <span class="discount-pill"><?= fa_num($product['discount_percent']) ?>٪ تخفیف</span>
+                            <span class="old-price m-0"><?= fa_price($product['price']) ?></span>
+                        </div>
                     <?php endif; ?>
-                    <div class="new-price fs-4"><?= fa_price($finalPrice) ?></div>
+                    <div class="new-price"><?= fa_price($finalPrice) ?></div>
                 </div>
 
                 <!-- انتخاب تعداد -->
@@ -141,7 +150,7 @@ if (empty($images)) {
                 </li>
             </ul>
 
-            <div class="tab-content bg-white border border-top-0 rounded-bottom p-4">
+            <div class="tab-content tab-panel-card p-4">
                 <!-- معرفی محصول -->
                 <div class="tab-pane fade show active" id="tab-desc">
                     <p class="lh-lg text-body" style="white-space: pre-line"><?= e($product['description'] ?: $product['short_description']) ?></p>
@@ -203,9 +212,15 @@ if (empty($images)) {
                             <p class="text-muted small">هنوز نظری برای این کالا ثبت نشده است. اولین نفر باشید!</p>
                         <?php else: ?>
                             <?php foreach ($comments as $comment): ?>
-                                <div class="comment-item border-bottom pb-3 mb-3">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <strong class="small"><?= e($comment['user_name'] ?? 'کاربر') ?></strong>
+                                <div class="comment-item mb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="comment-avatar"><i class="bi bi-person-fill"></i></span>
+                                            <div>
+                                                <strong class="small d-block"><?= e($comment['user_name'] ?? 'کاربر') ?></strong>
+                                                <span class="text-muted" style="font-size:.72rem"><?= fa_datetime($comment['created_at']) ?></span>
+                                            </div>
+                                        </div>
                                         <span class="text-warning small">
                                             <?php for ($i = 1; $i <= 5; $i++): ?>
                                                 <i class="bi <?= $i <= (int)$comment['rating'] ? 'bi-star-fill' : 'bi-star' ?>"></i>
@@ -213,10 +228,9 @@ if (empty($images)) {
                                         </span>
                                     </div>
                                     <?php if ($comment['title']): ?>
-                                        <div class="fw-bold small mt-2"><?= e($comment['title']) ?></div>
+                                        <div class="fw-bold small mt-1"><?= e($comment['title']) ?></div>
                                     <?php endif; ?>
-                                    <p class="small text-muted mt-1 mb-1 lh-lg"><?= e($comment['body']) ?></p>
-                                    <div class="text-muted" style="font-size:.75rem"><?= fa_datetime($comment['created_at']) ?></div>
+                                    <p class="small text-muted mt-1 mb-0 lh-lg"><?= e($comment['body']) ?></p>
                                 </div>
                             <?php endforeach; ?>
                         <?php endif; ?>
@@ -228,10 +242,14 @@ if (empty($images)) {
 
     <!-- ================= محصولات مشابه ================= -->
     <?php if (!empty($related)): ?>
-    <div class="mt-5">
-        <h5 class="section-title"><i class="bi bi-collection ms-2"></i>کالاهای مشابه</h5>
-        <div class="row g-3">
-            <?php foreach ($related as $p): include APP_ROOT . '/views/partials/product_card.php'; endforeach; ?>
+    <div class="mt-4">
+        <div class="section-card has-footer">
+            <div class="section-head">
+                <h2 class="section-head-title"><i class="bi bi-collection"></i> کالاهای مشابه</h2>
+            </div>
+            <div class="row g-0 grid-in-card">
+                <?php foreach ($related as $p): $cardMode = 'grid'; include APP_ROOT . '/views/partials/product_card.php'; endforeach; ?>
+            </div>
         </div>
     </div>
     <?php endif; ?>

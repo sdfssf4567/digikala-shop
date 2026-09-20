@@ -17,9 +17,10 @@ class HomeController
         $categories       = Category::mainCategories();
         $categoryCounts   = Category::productCounts();
         $specialOffers    = Product::specialOffers(8);
-        $latestProducts   = Product::latest(8);
-        $bestSellers      = Product::bestSellers(8);
+        $latestProducts   = Product::latest(10);
+        $bestSellers      = Product::bestSellers(10);
         $topDiscounted    = Product::topDiscounted(8);
+        $brands           = Brand::all();
 
         $pageTitle = SITE_TAGLINE;
 

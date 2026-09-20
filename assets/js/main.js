@@ -162,16 +162,17 @@ function getCsrfToken() {
     return input ? input.value : '';
 }
 
-/** به‌روزرسانی نشان تعداد سبد در هدر */
+/** به‌روزرسانی نشان تعداد سبد در هدر و نویگیشن موبایل */
 function updateCartBadge(count) {
-    const badge = document.getElementById('cart-count-badge');
-    if (!badge) return;
-    if (count > 0) {
-        badge.textContent = toPersianDigits(count);
-        badge.classList.remove('d-none');
-    } else {
-        badge.classList.add('d-none');
-    }
+    const badges = document.querySelectorAll('#cart-count-badge, #cart-count-badge-mobile');
+    badges.forEach(badge => {
+        if (count > 0) {
+            badge.textContent = toPersianDigits(count);
+            badge.classList.remove('d-none');
+        } else {
+            badge.classList.add('d-none');
+        }
+    });
 }
 
 /** تبدیل رقم به فارسی برای نمایش */
@@ -389,6 +390,77 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = currentUrl.href;
         });
     }
+});
+
+/* ---------------------------------------------
+ * فلش‌های ناوبری اسکرول افقی (اسلایدر محصولات)
+ * --------------------------------------------- */
+document.addEventListener('click', function (e) {
+    const nav = e.target.closest('[data-strip-nav]');
+    if (!nav) return;
+
+    const strip = document.getElementById(nav.dataset.stripNav);
+    if (!strip) return;
+
+    // جهت: قبلی = به راست، بعدی = به چپ (در چیدمان RTL)
+    const step = Math.max(strip.clientWidth * 0.7, 300);
+    strip.scrollBy({
+        left: nav.dataset.stripNav === 'prev' ? -step : step,
+        behavior: 'smooth'
+    });
+});
+
+/* فعال/غیرفعال کردن فلش‌ها بر اساس موقعیت اسکرول */
+function refreshStripNavs() {
+    document.querySelectorAll('[data-strip-nav]').forEach(nav => {
+        const strip = document.getElementById(nav.dataset.stripNav);
+        if (!strip) return;
+        if (nav.dataset.stripNav === 'prev') {
+            nav.disabled = strip.scrollLeft <= 2;
+        } else {
+            nav.disabled = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 2;
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', () => {
+    refreshStripNavs();
+    document.querySelectorAll('.strip').forEach(strip => {
+        strip.addEventListener('scroll', refreshStripNavs, { passive: true });
+    });
+    window.addEventListener('resize', refreshStripNavs);
+});
+
+/* ---------------------------------------------
+ * تایمر شمارش معکوس پیشنهاد شگفت‌انگیز
+ * ورودی: ثانیه باقی‌مانده در data-countdown
+ * --------------------------------------------- */
+document.addEventListener('DOMContentLoaded', function () {
+    const timerEl = document.getElementById('amazing-timer');
+    if (!timerEl) return;
+
+    let remaining = parseInt(timerEl.dataset.countdown, 10) || 0;
+    const cells = {
+        h: timerEl.querySelector('[data-unit="h"]'),
+        m: timerEl.querySelector('[data-unit="m"]'),
+        s: timerEl.querySelector('[data-unit="s"]')
+    };
+
+    function paint() {
+        const t = Math.max(0, remaining);
+        const h = Math.floor(t / 3600);
+        const m = Math.floor((t % 3600) / 60);
+        const s = t % 60;
+        const pad = n => String(n).padStart(2, '0');
+        if (cells.h) cells.h.textContent = toPersianDigits(pad(h));
+        if (cells.m) cells.m.textContent = toPersianDigits(pad(m));
+        if (cells.s) cells.s.textContent = toPersianDigits(pad(s));
+    }
+
+    paint();
+    setInterval(() => {
+        if (remaining > 0) remaining--;
+        paint();
+    }, 1000);
 });
 
 /* ---------------------------------------------

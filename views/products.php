@@ -48,7 +48,7 @@ $selectedBrandIds = array_map('intval', (array)($filters['brand_ids'] ?? []));
                 <?php endif; ?>
 
                 <div class="filter-card">
-                    <h6 class="filter-title"><i class="bi bi-funnel ms-1"></i> فیلترها</h6>
+                    <h6 class="filter-title"><i class="bi bi-funnel-fill"></i> فیلترها</h6>
 
                     <!-- دسته‌بندی‌ها -->
                     <div class="filter-group">
@@ -58,8 +58,8 @@ $selectedBrandIds = array_map('intval', (array)($filters['brand_ids'] ?? []));
                         <?php foreach ($categories as $cat): ?>
                             <a href="<?= $buildQuery(['cat' => $cat['slug'], 'page' => null]) ?>"
                                class="filter-cat <?= ($currentCategory && $currentCategory['id'] == $cat['id']) ? 'active' : '' ?>">
-                                <i class="bi <?= e($cat['icon'] ?: 'bi-grid') ?> ms-1"></i> <?= e($cat['name']) ?>
-                                <span class="text-muted small">(<?= fa_num($categoryCounts[$cat['id']] ?? 0) ?>)</span>
+                                <i class="bi <?= e($cat['icon'] ?: 'bi-grid') ?>"></i> <?= e($cat['name']) ?>
+                                <span class="count"><?= fa_num($categoryCounts[$cat['id']] ?? 0) ?></span>
                             </a>
                         <?php endforeach; ?>
                     </div>
@@ -104,11 +104,11 @@ $selectedBrandIds = array_map('intval', (array)($filters['brand_ids'] ?? []));
         <!-- ================= نتایج ================= -->
         <div class="col-lg-9">
             <!-- نوار بالای نتایج: تعداد + مرتب‌سازی -->
-            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 results-bar">
-                <span class="small text-muted"><?= fa_num($result['total']) ?> کالا یافت شد</span>
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 results-bar gap-2">
+                <span class="small text-muted-2"><i class="bi bi-box-seam ms-1"></i> <?= fa_num($result['total']) ?> کالا یافت شد</span>
                 <div class="d-flex align-items-center gap-2">
-                    <label class="small text-muted">مرتب‌سازی:</label>
-                    <select id="sort-select" class="form-select form-select-sm" style="width:auto">
+                    <label class="small text-muted-2">مرتب‌سازی:</label>
+                    <select id="sort-select" class="form-select form-select-sm">
                         <option value="newest"  <?= $sort === 'newest'  ? 'selected' : '' ?>>جدیدترین</option>
                         <option value="popular" <?= $sort === 'popular' ? 'selected' : '' ?>>محبوب‌ترین</option>
                         <option value="cheap"   <?= $sort === 'cheap'   ? 'selected' : '' ?>>ارزان‌ترین</option>
@@ -117,6 +117,22 @@ $selectedBrandIds = array_map('intval', (array)($filters['brand_ids'] ?? []));
                     </select>
                 </div>
             </div>
+
+            <!-- چیپ‌های فیلتر فعال -->
+            <?php if ($currentCategory || $filters['q']): ?>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <?php if ($currentCategory): ?>
+                        <a href="<?= $buildQuery(['cat' => null, 'page' => null]) ?>" class="active-chip">
+                            <i class="bi bi-tag-fill text-danger"></i> <?= e($currentCategory['name']) ?> <i class="bi bi-x-lg"></i>
+                        </a>
+                    <?php endif; ?>
+                    <?php if ($filters['q']): ?>
+                        <a href="<?= $buildQuery(['q' => null, 'page' => null]) ?>" class="active-chip">
+                            <i class="bi bi-search text-danger"></i> « <?= e($filters['q']) ?> » <i class="bi bi-x-lg"></i>
+                        </a>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
 
             <?php if (empty($result['items'])): ?>
                 <!-- حالت بدون نتیجه -->

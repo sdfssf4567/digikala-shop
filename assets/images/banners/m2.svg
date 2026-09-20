@@ -1,28 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f6d365"/>
-      <stop offset="100%" stop-color="#fda085"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8e2de2"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="300" fill="url(#bg)"/>
-<circle cx="211" cy="207" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="221" cy="254" r="3" fill="rgba(255,255,255,0.10)"/>
-<circle cx="288" cy="270" r="7" fill="rgba(255,255,255,0.10)"/>
-<circle cx="340" cy="218" r="7" fill="rgba(255,255,255,0.10)"/>
-<circle cx="421" cy="78" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="380" cy="254" r="7" fill="rgba(255,255,255,0.10)"/>
-<circle cx="196" cy="172" r="7" fill="rgba(255,255,255,0.10)"/>
-<circle cx="106" cy="88" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="140" cy="142" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="139" cy="113" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="164" cy="218" r="6" fill="rgba(255,255,255,0.10)"/>
-<circle cx="161" cy="216" r="6" fill="rgba(255,255,255,0.10)"/>
-  <text x="300.0" y="126" font-family="Vazirmatn, Tahoma, sans-serif" font-size="44"
-        font-weight="800" fill="#ffffff" text-anchor="middle" direction="rtl">پرداخت در محل</text>
-  <text x="300.0" y="174" font-family="Vazirmatn, Tahoma, sans-serif" font-size="24"
-        fill="rgba(255,255,255,0.92)" text-anchor="middle" direction="rtl">در تمام نقاط ایران</text>
-  <rect x="220.0" y="210" width="160" height="46" rx="23" fill="rgba(255,255,255,0.95)"/>
-  <text x="300.0" y="241" font-family="Vazirmatn, Tahoma, sans-serif" font-size="22"
-        font-weight="700" fill="#f6d365" text-anchor="middle" direction="rtl">همین حالا بخر</text>
+  <rect width="1200" height="420" fill="url(#g)"/>
+  <circle cx="1080" cy="210" r="150" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="1080" cy="210" r="100" fill="rgba(255,255,255,0.10)"/>
+  <circle cx="180" cy="60" r="90" fill="rgba(255,255,255,0.07)"/>
+  <circle cx="320" cy="380" r="60" fill="rgba(255,255,255,0.06)"/>
+  <text x="960" y="255" font-family="Vazirmatn, Tahoma, sans-serif" font-size="130" text-anchor="middle" fill="rgba(255,255,255,0.92)">✦</text>
+  <g direction="rtl">
+    <text x="810" y="185" font-family="Vazirmatn, Tahoma, sans-serif" font-size="44" font-weight="800" text-anchor="start" fill="#ffffff" direction="rtl">مد و پوشاک</text>
+    <text x="810" y="240" font-family="Vazirmatn, Tahoma, sans-serif" font-size="21" text-anchor="start" fill="rgba(255,255,255,0.85)" direction="rtl">جدیدترین استایل‌های فصل، ارسال سریع</text>
+  </g>
 </svg>

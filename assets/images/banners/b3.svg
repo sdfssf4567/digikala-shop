@@ -1,28 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fc5c7d"/>
-      <stop offset="100%" stop-color="#6a82fb"/>
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="100%" stop-color="#f7971e"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="450" fill="url(#bg)"/>
-<circle cx="549" cy="133" r="7" fill="rgba(255,255,255,0.10)"/>
-<circle cx="1082" cy="305" r="7" fill="rgba(255,255,255,0.10)"/>
-<circle cx="472" cy="248" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="821" cy="257" r="7" fill="rgba(255,255,255,0.10)"/>
-<circle cx="1044" cy="97" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="70" cy="267" r="3" fill="rgba(255,255,255,0.10)"/>
-<circle cx="625" cy="232" r="3" fill="rgba(255,255,255,0.10)"/>
-<circle cx="257" cy="393" r="4" fill="rgba(255,255,255,0.10)"/>
-<circle cx="733" cy="179" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="952" cy="421" r="4" fill="rgba(255,255,255,0.10)"/>
-<circle cx="1087" cy="267" r="5" fill="rgba(255,255,255,0.10)"/>
-<circle cx="995" cy="69" r="6" fill="rgba(255,255,255,0.10)"/>
-  <text x="600.0" y="189" font-family="Vazirmatn, Tahoma, sans-serif" font-size="64"
-        font-weight="800" fill="#ffffff" text-anchor="middle" direction="rtl">خانه هوشمند</text>
-  <text x="600.0" y="261" font-family="Vazirmatn, Tahoma, sans-serif" font-size="32"
-        fill="rgba(255,255,255,0.92)" text-anchor="middle" direction="rtl">کالاهای برقی و آشپزخانه</text>
-  <rect x="520.0" y="315" width="160" height="46" rx="23" fill="rgba(255,255,255,0.95)"/>
-  <text x="600.0" y="346" font-family="Vazirmatn, Tahoma, sans-serif" font-size="22"
-        font-weight="700" fill="#fc5c7d" text-anchor="middle" direction="rtl">همین حالا بخر</text>
+
+  <circle cx="1050" cy="60" r="180" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="90" cy="420" r="150" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1150" cy="400" r="90" fill="rgba(255,255,255,0.07)"/>
+  <circle cx="680" cy="240" r="5" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="551" cy="285" r="7" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="631" cy="148" r="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="719" cy="334" r="6" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="427" cy="215" r="8" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="814" cy="149" r="5" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="551" cy="429" r="7" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="483" cy="43" r="4" fill="rgba(255,255,255,0.12)"/>
+
+  <rect y="190" width="1200" height="70" fill="url(#shine)"/>
+
+  <g direction="rtl">
+    <rect x="940" y="86" width="200" height="38" rx="19" fill="rgba(255,255,255,0.92)"/>
+    <text x="1040" y="112" font-family="Vazirmatn, Tahoma, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#ef4056" direction="rtl">۷ روز ضمانت بازگشت</text>
+
+    <text x="1140" y="205" font-family="Vazirmatn, Tahoma, sans-serif" font-size="56" font-weight="800" text-anchor="start" fill="#ffffff" direction="rtl">حراج پایان فصل</text>
+    <text x="1140" y="262" font-family="Vazirmatn, Tahoma, sans-serif" font-size="25" text-anchor="start" fill="rgba(255,255,255,0.88)" direction="rtl">فرصت محدود — تا ۷۰٪ تخفیف روی کالاهای منتخب</text>
+
+    <rect x="940" y="300" width="200" height="54" rx="27" fill="#ffffff"/>
+    <text x="1040" y="335" font-family="Vazirmatn, Tahoma, sans-serif" font-size="21" font-weight="800" text-anchor="middle" fill="#ef4056" direction="rtl">از دست ندهید ‹</text>
+  </g>
+
+  
+  <g transform="translate(140,95)" opacity="0.97">
+    <rect width="160" height="190" rx="18" fill="#ffffff"/>
+    <rect x="50" y="18" width="60" height="60" rx="16" fill="#11998e" opacity="0.14"/>
+    <text x="80" y="60" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30" text-anchor="middle" fill="#11998e">◈</text>
+    <rect x="20" y="138" width="120" height="10" rx="5" fill="#e8e9ef"/>
+    <rect x="20" y="156" width="70" height="10" rx="5" fill="#f0f1f5"/>
+    <rect x="80" y="132" width="60" height="26" rx="13" fill="#ef4056"/>
+    <text x="110" y="150" font-family="Vazirmatn, Tahoma, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff" direction="rtl">۵۰٪</text>
+  </g>
+  
+  <g transform="translate(330,155)" opacity="0.97">
+    <rect width="150" height="180" rx="18" fill="#ffffff"/>
+    <rect x="45" y="18" width="60" height="60" rx="16" fill="#f7971e" opacity="0.14"/>
+    <text x="75" y="60" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30" text-anchor="middle" fill="#f7971e">◈</text>
+    <rect x="20" y="128" width="110" height="10" rx="5" fill="#e8e9ef"/>
+    <rect x="20" y="146" width="60" height="10" rx="5" fill="#f0f1f5"/>
+    <rect x="70" y="122" width="60" height="26" rx="13" fill="#ef4056"/>
+    <text x="100" y="140" font-family="Vazirmatn, Tahoma, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff" direction="rtl">۶۰٪</text>
+  </g>
+  
+  <g transform="translate(245,42)" opacity="0.97">
+    <rect width="130" height="148" rx="18" fill="#ffffff"/>
+    <rect x="35" y="18" width="60" height="60" rx="16" fill="#e83e8c" opacity="0.14"/>
+    <text x="65" y="60" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30" text-anchor="middle" fill="#e83e8c">◈</text>
+    <rect x="20" y="96" width="90" height="10" rx="5" fill="#e8e9ef"/>
+    <rect x="20" y="114" width="40" height="10" rx="5" fill="#f0f1f5"/>
+    <rect x="50" y="90" width="60" height="26" rx="13" fill="#ef4056"/>
+    <text x="80" y="108" font-family="Vazirmatn, Tahoma, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff" direction="rtl">۳۵٪</text>
+  </g>
 </svg>
