@@ -478,3 +478,50 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+/* ---------------------------------------------
+ * جلوه‌های نسخه ۲.۱: ظاهر شدن نرم بخش‌ها + سایه هدر
+ * --------------------------------------------- */
+document.addEventListener('DOMContentLoaded', function () {
+
+    /* سایه هدر هنگام اسکرول */
+    const siteHeader = document.querySelector('.site-header');
+    if (siteHeader) {
+        const onScrollHeader = () => {
+            siteHeader.classList.toggle('scrolled', window.scrollY > 8);
+        };
+        window.addEventListener('scroll', onScrollHeader, { passive: true });
+        onScrollHeader();
+    }
+
+    /* انیمیشن ظاهر شدن بخش‌های اصلی هنگام ورود به دید */
+    const revealTargets = document.querySelectorAll(
+        '.section-card, .amazing-section, .service-item, .mid-banner, ' +
+        '.category-circle-link, .product-card, .footer-about, .footer-col, .auth-card'
+    );
+
+    if ('IntersectionObserver' in window && revealTargets.length) {
+        /* شمارنده برای ایجاد تأخیر پلکانی بین آیتم‌های یک ردیف */
+        let batchIndex = 0;
+        let lastBatchTime = performance.now();
+
+        const revealObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                const now = performance.now();
+                /* اگر بین دو ظاهرشدن فاصله افتاده، شمارنده ریست می‌شود */
+                batchIndex = (now - lastBatchTime < 120) ? batchIndex + 1 : 0;
+                lastBatchTime = now;
+
+                entry.target.style.transitionDelay = Math.min(batchIndex * 60, 360) + 'ms';
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+        revealTargets.forEach(function (el) {
+            el.classList.add('reveal');
+            revealObserver.observe(el);
+        });
+    }
+});

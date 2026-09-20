@@ -1362,3 +1362,114 @@ img { user-select: none; }
     .amazing-timer { margin-inline-start: auto; }
     .amazing-see-all { display: none; }
 }
+
+/* =========================================================
+ * لایه جلوه‌های ویژه ۲.۱ — انیمیشن، میکروتعامل و حس زنده بودن
+ * ========================================================= */
+
+/* ---------- ۱) ظاهر شدن نرم بخش‌ها هنگام اسکرول ---------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity .65s ease, transform .65s cubic-bezier(.22, 1, .36, 1);
+    will-change: opacity, transform;
+}
+.reveal.revealed { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* ---------- ۲) سایه هدر هنگام اسکرول ---------- */
+.site-header { transition: box-shadow .3s ease; }
+.site-header.scrolled { box-shadow: 0 8px 28px rgba(31, 36, 48, .12); }
+
+/* ---------- ۳) زوم نرم تصویر محصولات هاور کارت ---------- */
+.product-image-link { overflow: hidden; display: block; border-radius: var(--dk-radius-sm); }
+.product-image { transition: transform .55s cubic-bezier(.22, 1, .36, 1); }
+.product-card:hover .product-image { transform: scale(1.08) rotate(.4deg); }
+
+/* ---------- ۴) جلوه‌های زنده بخش شگفت‌انگیز ---------- */
+@keyframes amazingShimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+.amazing-section {
+    background: linear-gradient(110deg, #ef4056 0%, #c93157 28%, #8e2de2 55%, #c93157 78%, #ef4056 100%);
+    background-size: 220% 100%;
+    animation: amazingShimmer 16s linear infinite;
+}
+@keyframes boltPulse {
+    0%, 100% { transform: scale(1) rotate(-3deg); filter: drop-shadow(0 4px 10px rgba(0,0,0,.25)); }
+    50%      { transform: scale(1.18) rotate(4deg); filter: drop-shadow(0 6px 16px rgba(255,255,255,.35)); }
+}
+.amazing-head .amazing-title i { animation: boltPulse 2.4s ease-in-out infinite; }
+
+@keyframes timerGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, .30); }
+    50%      { box-shadow: 0 0 0 9px rgba(255, 255, 255, 0); }
+}
+.amazing-timer { border-radius: 14px; animation: timerGlow 2.2s ease-in-out infinite; }
+
+/* ---------- ۵) میکروتعامل‌های عمومی ---------- */
+.btn { transition: var(--dk-transition); }
+.btn:active { transform: scale(.96); }
+.btn-primary { background-image: linear-gradient(180deg, rgba(255,255,255,.12), rgba(0,0,0,0) 55%); }
+
+/* آیکون دسته‌بندی‌ها */
+@keyframes catBounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-6px); }
+}
+.category-circle-link:hover .category-circle i { animation: catBounce .55s ease; }
+.category-circle-link:hover .category-name { color: var(--dk-red); }
+
+/* آیکون‌های نوار خدمات */
+.service-item { transition: var(--dk-transition); }
+.service-item:hover { transform: translateY(-4px); box-shadow: var(--dk-shadow); }
+.service-item:hover i { transform: scale(1.12); }
+.service-item i { transition: transform .3s ease; }
+
+/* ---------- ۶) برندها: خاکستری به رنگی ---------- */
+.brand-pill img {
+    filter: grayscale(1);
+    opacity: .72;
+    transition: filter .35s ease, opacity .35s ease, transform .35s ease;
+}
+.brand-pill:hover img { filter: grayscale(0); opacity: 1; transform: translateY(-3px); }
+
+/* ---------- ۷) بازگشت به بالا: نرم و شیشه‌ای ---------- */
+.back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(12px) scale(.9);
+    transition: all .35s cubic-bezier(.22, 1, .36, 1);
+    backdrop-filter: blur(4px);
+}
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+}
+
+/* ---------- ۸) انیمیشن ورود صفحات ---------- */
+@keyframes pageEnter {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: none; }
+}
+main, .page-content { animation: pageEnter .45s ease both; }
+
+/* ---------- ۹) هایلایت ورودی جستجو ---------- */
+.search-input:focus {
+    border-color: var(--dk-red);
+    box-shadow: 0 0 0 4px rgba(239, 64, 86, .12);
+}
+
+/* ---------- ۱۰) بهبود فوکوس دسترس‌پذیری ---------- */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+    outline: 2px solid var(--dk-red);
+    outline-offset: 2px;
+    border-radius: 6px;
+}

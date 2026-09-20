@@ -21,8 +21,10 @@ $pendingOrders   = (int)Database::getInstance()->fetchColumn("SELECT COUNT(*) FR
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= e($pageTitle) ?> | پنل مدیریت <?= e(SITE_NAME) ?></title>
 
-    <link rel="stylesheet" href="<?= asset('vendor/bootstrap.rtl.min.css') ?>">
-    <link rel="stylesheet" href="<?= asset('vendor/bootstrap-icons.css') ?>">
+    <link rel="stylesheet" href="<?= asset('vendor/bootstrap.rtl.min.css') ?>"
+          onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css'">
+    <link rel="stylesheet" href="<?= asset('vendor/bootstrap-icons.css') ?>"
+          onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css'">
     <link rel="stylesheet" href="<?= asset('css/fonts.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/admin.css') ?>">
 </head>

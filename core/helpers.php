@@ -88,10 +88,14 @@ function admin_url(string $page = '', array $params = []): string
 
 /**
  * ساخت آدرس فایل‌های استاتیک (css / js / تصاویر)
+ * نسخهٔ خودکار با cache-busting اضافه می‌شود تا اگر مرورگر نسخهٔ قدیمی
+ * css/js را کش کرده باشد، همیشه نسخهٔ جدید بارگذاری شود.
  */
 function asset(string $path): string
 {
-    return BASE_URL . '/assets/' . ltrim($path, '/');
+    $file = APP_ROOT . '/assets/' . ltrim($path, '/');
+    $version = is_file($file) ? substr((string)filemtime($file), 0, 8) : '1';
+    return BASE_URL . '/assets/' . ltrim($path, '/') . '?v=' . $version;
 }
 
 /**

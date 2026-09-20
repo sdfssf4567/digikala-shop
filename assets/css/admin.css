@@ -34,7 +34,6 @@ body.admin-body {
     align-self: flex-start;
     height: calc(100vh - 58px);
     overflow-y: auto;
-    width: 100%;
 }
 .admin-menu li { margin-bottom: 4px; }
 .admin-menu a {
